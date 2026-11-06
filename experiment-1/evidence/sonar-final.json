@@ -1,0 +1,99 @@
+{
+    "capturedAt":  "2026-10-30T11:11:37",
+    "gitCommit":  "a1ef964a",
+    "project":  {
+                    "key":  "litemall",
+                    "name":  "litemall",
+                    "qualifier":  "TRK",
+                    "measures":  [
+                                     {
+                                         "metric":  "code_smells",
+                                         "value":  "1990",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "bugs",
+                                         "value":  "34",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "vulnerabilities",
+                                         "value":  "1",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "alert_status",
+                                         "value":  "ERROR"
+                                     },
+                                     {
+                                         "metric":  "cognitive_complexity",
+                                         "value":  "3139",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "complexity",
+                                         "value":  "14094"
+                                     },
+                                     {
+                                         "metric":  "coverage",
+                                         "value":  "0.0",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "duplicated_lines_density",
+                                         "value":  "32.3",
+                                         "bestValue":  false
+                                     }
+                                 ]
+                },
+    "wxOrderService":  {
+                           "key":  "litemall:litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java",
+                           "name":  "WxOrderService.java",
+                           "qualifier":  "FIL",
+                           "path":  "litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java",
+                           "language":  "java",
+                           "measures":  [
+                                            {
+                                                "metric":  "complexity",
+                                                "value":  "169"
+                                            },
+                                            {
+                                                "metric":  "duplicated_lines_density",
+                                                "value":  "9.2",
+                                                "bestValue":  false
+                                            },
+                                            {
+                                                "metric":  "code_smells",
+                                                "value":  "0",
+                                                "bestValue":  true
+                                            },
+                                            {
+                                                "metric":  "cognitive_complexity",
+                                                "value":  "136",
+                                                "bestValue":  false
+                                            },
+                                            {
+                                                "metric":  "bugs",
+                                                "value":  "0",
+                                                "bestValue":  true
+                                            },
+                                            {
+                                                "metric":  "vulnerabilities",
+                                                "value":  "0",
+                                                "bestValue":  true
+                                            },
+                                            {
+                                                "metric":  "ncloc",
+                                                "value":  "901"
+                                            }
+                                        ]
+                       },
+    "qualityGate":  "ERROR",
+    "issueTotal":  0,
+    "issuesBySeverity":  [
+
+                         ],
+    "issues":  [
+
+               ]
+}

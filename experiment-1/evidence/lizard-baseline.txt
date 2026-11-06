@@ -1,0 +1,34 @@
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+      38      5    418      6      44 WxOrderService::list@125-168@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      47      6    473      2      56 WxOrderService::detail@177-232@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+     213     49   1778      2     287 WxOrderService::submit@248-534@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      36      9    256      2      47 WxOrderService::cancel@549-595@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      45      9    330      3      52 WxOrderService::prepay@609-660@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      36      7    263      3      44 WxOrderService::h5pay@671-714@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      71     15    622      2      96 WxOrderService::payNotify@728-823@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      26      7    182      2      34 WxOrderService::refund@835-868@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      28      7    197      2      32 WxOrderService::confirm@880-911@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      23      6    156      2      30 WxOrderService::delete@923-952@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      14      4     93      2      15 WxOrderService::goods@961-975@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      59     16    454      2      68 WxOrderService::comment@986-1053@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+       8      2     56      1       9 WxOrderService::releaseCoupon@1063-1071@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+1 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+    736      49.5    10.9      406.0        13     C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+
+===========================================================================================================
+!!!! Warnings (cyclomatic_complexity > 10 or length > 1000 or nloc > 1000000 or parameter_count > 100) !!!!
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+     213     49   1778      2     287 WxOrderService::submit@248-534@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      71     15    622      2      96 WxOrderService::payNotify@728-823@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+      59     16    454      2      68 WxOrderService::comment@986-1053@C:\Users\22703\Desktop\����������\litemall\experiment-1\evidence\WxOrderService.baseline.java
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+       736      49.5    10.9      406.0       13            3      0.23    0.53

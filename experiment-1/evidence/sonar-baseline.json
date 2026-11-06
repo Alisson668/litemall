@@ -1,0 +1,244 @@
+{
+    "capturedAt":  "2026-10-30T11:01:08",
+    "gitCommit":  "a1ef964a",
+    "project":  {
+                    "key":  "litemall",
+                    "name":  "litemall",
+                    "qualifier":  "TRK",
+                    "measures":  [
+                                     {
+                                         "metric":  "vulnerabilities",
+                                         "value":  "1",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "duplicated_lines_density",
+                                         "value":  "32.4",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "alert_status",
+                                         "value":  "OK"
+                                     },
+                                     {
+                                         "metric":  "coverage",
+                                         "value":  "0.0",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "cognitive_complexity",
+                                         "value":  "3172",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "bugs",
+                                         "value":  "34",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "code_smells",
+                                         "value":  "2012",
+                                         "bestValue":  false
+                                     },
+                                     {
+                                         "metric":  "complexity",
+                                         "value":  "14048"
+                                     }
+                                 ]
+                },
+    "wxOrderService":  {
+                           "key":  "litemall:litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java",
+                           "name":  "WxOrderService.java",
+                           "qualifier":  "FIL",
+                           "path":  "litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java",
+                           "language":  "java",
+                           "measures":  [
+                                            {
+                                                "metric":  "ncloc",
+                                                "value":  "736"
+                                            },
+                                            {
+                                                "metric":  "vulnerabilities",
+                                                "value":  "0",
+                                                "bestValue":  true
+                                            },
+                                            {
+                                                "metric":  "duplicated_lines_density",
+                                                "value":  "13.2",
+                                                "bestValue":  false
+                                            },
+                                            {
+                                                "metric":  "complexity",
+                                                "value":  "138"
+                                            },
+                                            {
+                                                "metric":  "cognitive_complexity",
+                                                "value":  "175",
+                                                "bestValue":  false
+                                            },
+                                            {
+                                                "metric":  "code_smells",
+                                                "value":  "22",
+                                                "bestValue":  false
+                                            },
+                                            {
+                                                "metric":  "bugs",
+                                                "value":  "0",
+                                                "bestValue":  true
+                                            }
+                                        ]
+                       },
+    "issueTotal":  22,
+    "issuesBySeverity":  [
+                             {
+                                 "severity":  "MINOR",
+                                 "count":  4
+                             },
+                             {
+                                 "severity":  "CRITICAL",
+                                 "count":  7
+                             },
+                             {
+                                 "severity":  "MAJOR",
+                                 "count":  8
+                             },
+                             {
+                                 "severity":  "INFO",
+                                 "count":  3
+                             }
+                         ],
+    "issues":  [
+                   {
+                       "rule":  "java:S1126",
+                       "severity":  "MINOR",
+                       "line":  144,
+                       "message":  "Replace this if-then-else statement by a single method invocation."
+                   },
+                   {
+                       "rule":  "java:S2293",
+                       "severity":  "MINOR",
+                       "line":  190,
+                       "message":  "Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\")."
+                   },
+                   {
+                       "rule":  "java:S1192",
+                       "severity":  "CRITICAL",
+                       "line":  220,
+                       "message":  "Define a constant instead of duplicating this literal \"expressInfo\" 3 times."
+                   },
+                   {
+                       "rule":  "java:S3776",
+                       "severity":  "CRITICAL",
+                       "line":  248,
+                       "message":  "Refactor this method to reduce its Cognitive Complexity from 82 to the 15 allowed."
+                   },
+                   {
+                       "rule":  "java:S1192",
+                       "severity":  "CRITICAL",
+                       "line":  261,
+                       "message":  "Define a constant instead of duplicating this literal \"grouponLinkId\" 3 times."
+                   },
+                   {
+                       "rule":  "java:S125",
+                       "severity":  "MAJOR",
+                       "line":  293,
+                       "message":  "This block of commented-out lines of code should be removed."
+                   },
+                   {
+                       "rule":  "java:S1066",
+                       "severity":  "MAJOR",
+                       "line":  297,
+                       "message":  "Merge this if statement with the enclosing one."
+                   },
+                   {
+                       "rule":  "java:S1155",
+                       "severity":  "MINOR",
+                       "line":  330,
+                       "message":  "Use isEmpty() to check whether the collection is empty or not."
+                   },
+                   {
+                       "rule":  "java:S112",
+                       "severity":  "MAJOR",
+                       "line":  432,
+                       "message":  "Define and throw a dedicated exception instead of using a generic one."
+                   },
+                   {
+                       "rule":  "java:S112",
+                       "severity":  "MAJOR",
+                       "line":  435,
+                       "message":  "Define and throw a dedicated exception instead of using a generic one."
+                   },
+                   {
+                       "rule":  "java:S112",
+                       "severity":  "MAJOR",
+                       "line":  496,
+                       "message":  "Define and throw a dedicated exception instead of using a generic one."
+                   },
+                   {
+                       "rule":  "java:S1192",
+                       "severity":  "CRITICAL",
+                       "line":  496,
+                       "message":  "Define a constant instead of duplicating this literal \"æ´æ°æ°æ®å·²å¤±æ\" 4 times."
+                   },
+                   {
+                       "rule":  "java:S1135",
+                       "severity":  "INFO",
+                       "line":  513,
+                       "message":  "Complete the task associated to this TODO comment."
+                   },
+                   {
+                       "rule":  "java:S1192",
+                       "severity":  "CRITICAL",
+                       "line":  525,
+                       "message":  "Define a constant instead of duplicating this literal \"orderId\" 7 times."
+                   },
+                   {
+                       "rule":  "java:S1854",
+                       "severity":  "MAJOR",
+                       "line":  566,
+                       "message":  "Remove this useless assignment to local variable \"preUpdateTime\"."
+                   },
+                   {
+                       "rule":  "java:S1481",
+                       "severity":  "MINOR",
+                       "line":  566,
+                       "message":  "Remove this unused \"preUpdateTime\" local variable."
+                   },
+                   {
+                       "rule":  "java:S112",
+                       "severity":  "MAJOR",
+                       "line":  578,
+                       "message":  "Define and throw a dedicated exception instead of using a generic one."
+                   },
+                   {
+                       "rule":  "java:S112",
+                       "severity":  "MAJOR",
+                       "line":  587,
+                       "message":  "Define and throw a dedicated exception instead of using a generic one."
+                   },
+                   {
+                       "rule":  "java:S1192",
+                       "severity":  "CRITICAL",
+                       "line":  629,
+                       "message":  "Define a constant instead of duplicating this literal \"è®¢åä¸è½æ¯ä»\" 4 times."
+                   },
+                   {
+                       "rule":  "java:S3776",
+                       "severity":  "CRITICAL",
+                       "line":  728,
+                       "message":  "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed."
+                   },
+                   {
+                       "rule":  "java:S1135",
+                       "severity":  "INFO",
+                       "line":  813,
+                       "message":  "Complete the task associated to this TODO comment."
+                   },
+                   {
+                       "rule":  "java:S1135",
+                       "severity":  "INFO",
+                       "line":  863,
+                       "message":  "Complete the task associated to this TODO comment."
+                   }
+               ]
+}

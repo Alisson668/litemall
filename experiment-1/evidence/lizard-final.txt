@@ -1,0 +1,63 @@
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+      34      4    400      6      40 WxOrderService::list@130-169@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      47      6    470      2      56 WxOrderService::detail@178-233@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      14      4     70      2      14 WxOrderService::submit@249-262@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      36      6    296      2      41 WxOrderService::submitOrder@264-304@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      21      5    129      3      21 WxOrderService::validateGroupon@306-326@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      20      6    128      3      20 WxOrderService::validateGrouponParticipation@328-347@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      12      3     84      2      12 WxOrderService::loadCheckedGoods@349-360@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      20      4    115      4      20 WxOrderService::calculateCoupon@362-381@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      14      5     86      3      14 WxOrderService::resolveCouponUser@383-396@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      23      2    177      6      23 WxOrderService::createOrder@398-420@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       7      1     34      1       7 WxOrderService::buildDetailedAddress@422-428@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      16      2    147      2      16 WxOrderService::saveOrderGoods@430-445@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       8      2     38      2       8 WxOrderService::removeCart@447-454@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       7      3     49      1       7 WxOrderService::deductStock@456-462@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      11      3     81      2      11 WxOrderService::markCouponUsed@464-474@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      27      4    172      3      28 WxOrderService::createGroupon@476-503@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      17      4    114      1      17 WxOrderService::completeZeroPriceOrder@505-521@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      10      1     75      4      10 WxOrderService::buildSubmitResult@523-532@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       6      4     45      2       6 WxOrderService::grouponLinkId@534-539@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      2     16      1       3 WxOrderService::isPositive@541-543@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      15      1     67      7      15 SubmitOrderRequest::SubmitOrderRequest@554-568@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      10      1     75      1      10 SubmitOrderRequest::parse@570-579@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      3     18      0       3 SubmitOrderRequest::isValid@581-583@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      1     11      0       3 SubmitOrderRequest::hasGroupon@585-587@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       4      1     22      2       4 CouponSelection::CouponSelection@594-597@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      1     14      0       3 CouponSelection::none@599-601@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      1     13      1       3 OrderValidationException::OrderValidationException@608-610@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      1      8      0       3 OrderValidationException::getResponse@612-614@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       3      1     12      1       3 OrderOperationException::OrderOperationException@620-622@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      35      9    247      2      45 OrderOperationException::cancel@638-682@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      45      9    330      3      52 OrderOperationException::prepay@696-747@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      36      7    263      3      44 OrderOperationException::h5pay@758-801@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      41      8    298      2      46 OrderOperationException::payNotify@815-860@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       9      2     47      1       9 OrderOperationException::readPayNotify@862-870@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      15      4    105      1      15 OrderOperationException::parsePayNotify@872-886@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      21      5    133      1      21 OrderOperationException::activateGrouponAfterPayment@888-908@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      17      5    118      2      17 OrderOperationException::completeGrouponIfFull@910-926@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       7      1     54      1       7 OrderOperationException::notifyPaidOrder@928-934@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      26      7    182      2      33 OrderOperationException::refund@946-978@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      28      7    197      2      32 OrderOperationException::confirm@990-1021@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      23      6    156      2      30 OrderOperationException::delete@1033-1062@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      14      4     93      2      15 OrderOperationException::goods@1071-1085@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+      59     16    454      2      68 OrderOperationException::comment@1096-1163@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+       8      2     56      1       9 OrderOperationException::releaseCoupon@1173-1181@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+1 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+    901      17.8     4.0      129.5        44     litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+
+===========================================================================================================
+!!!! Warnings (cyclomatic_complexity > 10 or length > 1000 or nloc > 1000000 or parameter_count > 100) !!!!
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+      59     16    454      2      68 OrderOperationException::comment@1096-1163@litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/service/WxOrderService.java
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+       901      17.8     4.0      129.5       44            1      0.02    0.08

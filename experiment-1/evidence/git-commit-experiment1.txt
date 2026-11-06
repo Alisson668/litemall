@@ -1,0 +1,13 @@
+﻿commit 3ed0fc7f2f5bfcca6b7d9c7fd3b17d8667386a59
+Author:     Alisson668 <2270328245@qq.com>
+AuthorDate: Fri Oct 30 11:18:17 2026 +0800
+Commit:     Alisson668 <2270328245@qq.com>
+CommitDate: Fri Oct 30 11:18:17 2026 +0800
+
+    feat(experiment-1): refactor order workflow and add price tests
+
+ .../litemall/db/service/CouponVerifyService.java   |   5 +-
+ .../litemall/wx/service/OrderPriceCalculator.java  |  83 +++
+ .../litemall/wx/service/WxOrderService.java        | 740 ++++++++++++---------
+ .../wx/service/OrderPriceCalculatorTest.java       |  86 +++
+ 4 files changed, 597 insertions(+), 317 deletions(-)
