@@ -45,6 +45,11 @@ target/
 *.properties~
 *.xml~
 
+### experiment runtime ###
+/litemall/
+/.scannerwork/
+~$*
+
 ### system ignore ###
 .DS_Store
 Thumbs.db
