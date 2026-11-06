@@ -1,0 +1,12 @@
+commit 9f92bb1e75948cad62f32c818166d4060feed184
+Author:     Alisson668 <2270328245@qq.com>
+AuthorDate: Fri Nov 6 09:45:49 2026 +0800
+Commit:     Alisson668 <2270328245@qq.com>
+CommitDate: Fri Nov 6 09:45:49 2026 +0800
+
+    test(experiment-2): add JUnit 5 coverage and mutation tests
+
+ litemall-wx-api/pom.xml                            | 104 ++++++++++++++++-
+ .../wx/service/OrderPriceCalculatorTest.java       | 126 +++++++++++++++++----
+ .../wx/service/WxOrderServiceMockitoTest.java      |  56 +++++++++
+ 3 files changed, 264 insertions(+), 22 deletions(-)

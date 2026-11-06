@@ -1,0 +1,38 @@
+{
+  "experiment": 2,
+  "collectedAt": "2026-11-06",
+  "commit": "9f92bb1e75948cad62f32c818166d4060feed184",
+  "environment": {
+    "java": "OpenJDK 1.8.0_504",
+    "maven": "3.9.12",
+    "junitJupiter": "5.10.3",
+    "mockito": "1.10.19 (inherited)",
+    "jacoco": "0.8.11",
+    "pitest": "1.9.0",
+    "pitestJunit5Plugin": "1.0.0"
+  },
+  "tests": {
+    "classes": 2,
+    "run": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "jacoco": {
+    "lineCovered": 29,
+    "lineMissed": 0,
+    "lineCoveragePercent": 100.0,
+    "branchCovered": 12,
+    "branchMissed": 0,
+    "branchCoveragePercent": 100.0
+  },
+  "pitest": {
+    "generated": 13,
+    "killed": 13,
+    "survived": 0,
+    "noCoverage": 0,
+    "runErrors": 0,
+    "mutationScorePercent": 100.0,
+    "testStrengthPercent": 100.0
+  }
+}
