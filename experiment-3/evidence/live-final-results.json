@@ -1,0 +1,162 @@
+﻿[
+    {
+        "name":  "valid-shape-missing-address",
+        "category":  "normal",
+        "httpStatus":  200,
+        "errno":  401,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  401,
+        "passed":  true,
+        "responseBody":  "{\"errno\":401,\"errmsg\":\"参数不对\"}"
+    },
+    {
+        "name":  "text-integer",
+        "category":  "type-confusion",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "boolean-integer",
+        "category":  "type-confusion",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "sql-injection",
+        "category":  "security",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "integer-overflow",
+        "category":  "extreme-value",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "negative-address",
+        "category":  "extreme-value",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "malformed-json",
+        "category":  "encoding",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "array-root",
+        "category":  "type-confusion",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    },
+    {
+        "name":  "plain-text",
+        "category":  "encoding",
+        "httpStatus":  415,
+        "errno":  415,
+        "expectedHttpStatus":  415,
+        "expectedErrno":  415,
+        "passed":  true,
+        "responseBody":  "{\"errno\":415,\"errmsg\":\"请求媒体类型不支持\"}"
+    },
+    {
+        "name":  "missing-token",
+        "category":  "authentication",
+        "httpStatus":  200,
+        "errno":  501,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  501,
+        "passed":  true,
+        "responseBody":  "{\"errno\":501,\"errmsg\":\"请登录\"}"
+    },
+    {
+        "name":  "invalid-token",
+        "category":  "authentication",
+        "httpStatus":  200,
+        "errno":  501,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  501,
+        "passed":  true,
+        "responseBody":  "{\"errno\":501,\"errmsg\":\"请登录\"}"
+    },
+    {
+        "name":  "wrong-method",
+        "category":  "contract",
+        "httpStatus":  405,
+        "errno":  405,
+        "expectedHttpStatus":  405,
+        "expectedErrno":  405,
+        "passed":  true,
+        "responseBody":  "{\"errno\":405,\"errmsg\":\"请求方法不支持\"}"
+    },
+    {
+        "name":  "unsupported-accept",
+        "category":  "contract",
+        "httpStatus":  406,
+        "errno":  null,
+        "expectedHttpStatus":  406,
+        "expectedErrno":  0,
+        "passed":  true,
+        "responseBody":  ""
+    },
+    {
+        "name":  "body-user-id",
+        "category":  "idor",
+        "httpStatus":  200,
+        "errno":  401,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  401,
+        "passed":  true,
+        "responseBody":  "{\"errno\":401,\"errmsg\":\"参数不对\"}"
+    },
+    {
+        "name":  "oversized-message",
+        "category":  "extreme-value",
+        "httpStatus":  200,
+        "errno":  401,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  401,
+        "passed":  true,
+        "responseBody":  "{\"errno\":401,\"errmsg\":\"参数不对\"}"
+    },
+    {
+        "name":  "cross-user-cart",
+        "category":  "idor",
+        "httpStatus":  200,
+        "errno":  402,
+        "expectedHttpStatus":  200,
+        "expectedErrno":  402,
+        "passed":  true,
+        "responseBody":  "{\"errno\":402,\"errmsg\":\"参数值不对\"}"
+    }
+]

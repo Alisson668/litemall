@@ -1,0 +1,15 @@
+commit 1b1da370dddf9fc8a6963033dd8a81a24565f805
+Author:     Alisson668 <2270328245@qq.com>
+AuthorDate: Fri Nov 13 09:32:45 2026 +0800
+Commit:     Alisson668 <2270328245@qq.com>
+CommitDate: Fri Nov 13 09:32:45 2026 +0800
+
+    test(experiment-3): harden order contract and add semantic fuzzing
+
+ .../core/config/GlobalExceptionHandler.java        |  24 ++
+ .../litemall/wx/service/WxOrderService.java        |  58 +++-
+ .../litemall/wx/web/WxOrderController.java         |   7 +-
+ .../litemall/wx/web/WxOrderSubmitContractTest.java | 172 ++++++++++++
+ .../litemall/wx/web/WxOrderSubmitFuzzTest.java     | 248 +++++++++++++++++
+ scripts/experiment3.ps1                            | 296 +++++++++++++++++++++
+ 6 files changed, 794 insertions(+), 11 deletions(-)

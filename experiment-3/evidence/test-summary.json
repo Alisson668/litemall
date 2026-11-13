@@ -1,0 +1,40 @@
+{
+  "experiment": 3,
+  "collectedAt": "2026-11-13T09:32:22+08:00",
+  "commit": "1b1da370dddf9fc8a6963033dd8a81a24565f805",
+  "environment": {
+    "java": "OpenJDK 1.8.0_504",
+    "maven": "3.9.12",
+    "springMvc": "5.1.7.RELEASE",
+    "junitJupiter": "5.10.3",
+    "mockito": "1.10.19 (inherited)",
+    "dockerEngine": "29.5.2",
+    "application": "http://localhost:8080"
+  },
+  "automatedTests": {
+    "classes": 2,
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "liveHttpFuzzing": {
+    "cases": 16,
+    "passed": 16,
+    "failed": 0,
+    "serverErrors": 0,
+    "statusCodesObserved": [200, 405, 406, 415]
+  },
+  "contract": {
+    "covered": 24,
+    "total": 24,
+    "coveragePercent": 100.0
+  },
+  "openApi": {
+    "file": "experiment-3/openapi/wx-api-swagger.json",
+    "swaggerVersion": "2.0",
+    "pathCount": 84,
+    "submitConsumes": "application/json",
+    "submitProduces": "application/json"
+  }
+}

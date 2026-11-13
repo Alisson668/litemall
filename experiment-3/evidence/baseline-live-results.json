@@ -1,0 +1,48 @@
+{
+  "collectedAt": "2026-11-13T09:13:00+08:00",
+  "endpoint": "http://localhost:8080/wx/order/submit",
+  "applicationState": "pre-fix running container",
+  "cases": [
+    {
+      "name": "valid-shape-missing-address",
+      "httpStatus": 200,
+      "errno": 401
+    },
+    {
+      "name": "text-integer",
+      "httpStatus": 200,
+      "errno": 401
+    },
+    {
+      "name": "sql-injection",
+      "httpStatus": 200,
+      "errno": 401
+    },
+    {
+      "name": "integer-overflow",
+      "httpStatus": 200,
+      "errno": 401
+    },
+    {
+      "name": "malformed-json",
+      "httpStatus": 200,
+      "errno": 401
+    },
+    {
+      "name": "array-root",
+      "httpStatus": 200,
+      "errno": 401
+    },
+    {
+      "name": "plain-text",
+      "httpStatus": 200,
+      "errno": 401
+    }
+  ],
+  "observations": [
+    "text, boolean, array and object field values were coerced by JsonNode.asInt()",
+    "integer overflow was coerced instead of rejected",
+    "text/plain was accepted by the submit endpoint",
+    "invalid structures and values were all collapsed into the same business error"
+  ]
+}

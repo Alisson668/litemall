@@ -1,0 +1,7 @@
+你是资深 Java 契约测试与安全工程师。请审计 litemall 的 POST /wx/order/submit 及其 JWT 鉴权链路。
+要求：根据控制器、响应封装和真实 HTTP 行为建立接口契约；使用 JUnit 5 + MockMvc 覆盖正常、异常、边界和越权前置条件；
+对 JSON 类型混淆、负数、超大整数、SQL 注入文本、畸形 JSON、编码异常、IDOR 和超大载荷生成语义 Fuzzing 用例；
+每条测试必须使用精确断言，禁止只断言 HTTP 200、errno 或 assertNotNull；
+执行真实 HTTP Fuzzing，分类统计响应，确保客户端输入不会导致未捕获 500/502；
+给出最小修改建议，并明确列出无法由当前测试覆盖的路径。
+先输出契约矩阵和 Fuzzing 载荷矩阵，再输出测试代码与修复说明，不要求输出完整文件。

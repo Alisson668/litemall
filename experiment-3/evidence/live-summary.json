@@ -1,0 +1,15 @@
+﻿{
+    "collectedAt":  "2026-11-13 09:32:22+08:00",
+    "endpoint":  "http://localhost:8080/wx/order/submit",
+    "cases":  16,
+    "passed":  16,
+    "failed":  0,
+    "statusCodesObserved":  [
+                                200,
+                                405,
+                                406,
+                                415
+                            ],
+    "serverErrorsObserved":  0,
+    "swaggerFile":  "experiment-3/openapi/wx-api-swagger.json"
+}

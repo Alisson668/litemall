@@ -1,0 +1,32 @@
+{
+  "scope": "POST /wx/order/submit and GET /wx/order/detail security boundary",
+  "contractElements": [
+    {"id": "C01", "contract": "POST route exists", "test": "contract.success", "status": "PASS"},
+    {"id": "C02", "contract": "request consumes application/json", "test": "rejectsNonJsonContentType", "status": "PASS"},
+    {"id": "C03", "contract": "response produces application/json", "test": "delegatesValidRequestWithAuthenticatedUser", "status": "PASS"},
+    {"id": "C04", "contract": "X-Litemall-Token supplies authenticated userId", "test": "delegatesValidRequestWithAuthenticatedUser", "status": "PASS"},
+    {"id": "C05", "contract": "body userId cannot override token identity", "test": "bodyUserIdCannotOverrideAuthenticatedIdentity", "status": "PASS"},
+    {"id": "C06", "contract": "missing token returns errno 501", "test": "missingTokenReturnsUnlogin", "status": "PASS"},
+    {"id": "C07", "contract": "invalid JWT is anonymous", "test": "invalidTokenIsTreatedAsAnonymous", "status": "PASS"},
+    {"id": "C08", "contract": "request root must be a JSON object", "test": "array-root and invalid-JSON fuzz cases", "status": "PASS"},
+    {"id": "C09", "contract": "missing required fields return errno 401", "test": "invalidPayloads missing-field cases", "status": "PASS"},
+    {"id": "C10", "contract": "integer fields reject text, boolean, array and object values", "test": "type-confusion fuzz cases", "status": "PASS"},
+    {"id": "C11", "contract": "integer fields reject out-of-range values", "test": "integer-overflow fuzz case", "status": "PASS"},
+    {"id": "C12", "contract": "cartId must be non-negative", "test": "negative-cart fuzz case", "status": "PASS"},
+    {"id": "C13", "contract": "addressId must be positive", "test": "zero-address and negative-address fuzz cases", "status": "PASS"},
+    {"id": "C14", "contract": "couponId supports 0, -1 and positive values only", "test": "invalid-coupon-sentinel fuzz case", "status": "PASS"},
+    {"id": "C15", "contract": "message must be textual", "test": "non-string-message fuzz case", "status": "PASS"},
+    {"id": "C16", "contract": "SQL injection text never reaches the database", "test": "sqlInjectionTextNeverReachesDatabase", "status": "PASS"},
+    {"id": "C17", "contract": "malformed JSON is contained without 5xx", "test": "invalid JSON payload", "status": "PASS"},
+    {"id": "C18", "contract": "invalid UTF-8 is contained without 5xx", "test": "invalidUtf8PayloadDoesNotCrash", "status": "PASS"},
+    {"id": "C19", "contract": "64 KiB message does not crash the server", "test": "oversizedMessageDoesNotCrash", "status": "PASS"},
+    {"id": "C20", "contract": "cross-user cart access is denied", "test": "cartIdorUsesAuthenticatedUserId", "status": "PASS"},
+    {"id": "C21", "contract": "cross-user order detail is denied", "test": "orderDetailRejectsMismatchedOwner", "status": "PASS"},
+    {"id": "C22", "contract": "wrong HTTP method returns 405", "test": "rejectsWrongHttpMethod", "status": "PASS"},
+    {"id": "C23", "contract": "unsupported request media type returns 415", "test": "rejectsNonJsonContentType", "status": "PASS"},
+    {"id": "C24", "contract": "unsupported response media type returns 406", "test": "rejectsUnsupportedAcceptHeader", "status": "PASS"}
+  ],
+  "covered": 24,
+  "total": 24,
+  "coveragePercent": 100.0
+}
