@@ -7,6 +7,7 @@ import org.linlinjava.litemall.core.validator.Sort;
 import org.linlinjava.litemall.wx.annotation.LoginUser;
 import org.linlinjava.litemall.wx.service.WxOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -63,7 +64,9 @@ public class WxOrderController {
      * @param body   订单信息，{ cartId：xxx, addressId: xxx, couponId: xxx, message: xxx, grouponRulesId: xxx,  grouponLinkId: xxx}
      * @return 提交订单操作结果
      */
-    @PostMapping("submit")
+    @PostMapping(value = "submit",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public Object submit(@LoginUser Integer userId, @RequestBody String body) {
         return wxOrderService.submit(userId, body);
     }

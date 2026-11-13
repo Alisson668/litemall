@@ -1,5 +1,6 @@
 package org.linlinjava.litemall.wx.service;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.github.binarywang.wxpay.bean.notify.WxPayNotifyResponse;
 import com.github.binarywang.wxpay.bean.notify.WxPayOrderNotifyResult;
 import com.github.binarywang.wxpay.bean.order.WxPayMpOrderResult;
@@ -262,8 +263,11 @@ public class WxOrderService {
     }
 
     private Object submitOrder(Integer userId, SubmitOrderRequest request) {
-        if (!request.isValid()) {
+        if (!request.hasRequiredFields()) {
             throw new OrderValidationException(ResponseUtil.badArgument());
+        }
+        if (!request.hasValidValues()) {
+            throw new OrderValidationException(ResponseUtil.badArgumentValue());
         }
 
         LitemallAddress address = addressService.query(userId, request.addressId);
@@ -568,22 +572,58 @@ public class WxOrderService {
         }
 
         private static SubmitOrderRequest parse(String body) {
+            Object parsed = JacksonUtil.toNode(body);
+            if (!(parsed instanceof JsonNode) || !((JsonNode) parsed).isObject()) {
+                throw new OrderValidationException(ResponseUtil.badArgumentValue());
+            }
+            JsonNode root = (JsonNode) parsed;
             return new SubmitOrderRequest(
-                    JacksonUtil.parseInteger(body, "cartId"),
-                    JacksonUtil.parseInteger(body, "addressId"),
-                    JacksonUtil.parseInteger(body, "couponId"),
-                    JacksonUtil.parseInteger(body, "userCouponId"),
-                    JacksonUtil.parseString(body, "message"),
-                    JacksonUtil.parseInteger(body, "grouponRulesId"),
-                    JacksonUtil.parseInteger(body, GROUPON_LINK_ID));
+                    parseInteger(root, "cartId"),
+                    parseInteger(root, "addressId"),
+                    parseInteger(root, "couponId"),
+                    parseInteger(root, "userCouponId"),
+                    parseString(root, "message"),
+                    parseInteger(root, "grouponRulesId"),
+                    parseInteger(root, GROUPON_LINK_ID));
         }
 
-        private boolean isValid() {
+        private boolean hasRequiredFields() {
             return cartId != null && addressId != null && couponId != null;
+        }
+
+        private boolean hasValidValues() {
+            return cartId >= 0
+                    && addressId > 0
+                    && couponId >= -1
+                    && (userCouponId == null || userCouponId > 0)
+                    && (grouponRulesId == null || grouponRulesId >= 0)
+                    && (grouponLinkId == null || grouponLinkId >= 0);
         }
 
         private boolean hasGroupon() {
             return isPositive(grouponRulesId);
+        }
+
+        private static Integer parseInteger(JsonNode root, String field) {
+            JsonNode leaf = root.get(field);
+            if (leaf == null || leaf.isNull()) {
+                return null;
+            }
+            if (!leaf.isIntegralNumber() || !leaf.canConvertToInt()) {
+                throw new OrderValidationException(ResponseUtil.badArgumentValue());
+            }
+            return leaf.intValue();
+        }
+
+        private static String parseString(JsonNode root, String field) {
+            JsonNode leaf = root.get(field);
+            if (leaf == null || leaf.isNull()) {
+                return null;
+            }
+            if (!leaf.isTextual()) {
+                throw new OrderValidationException(ResponseUtil.badArgumentValue());
+            }
+            return leaf.textValue();
         }
     }
 
